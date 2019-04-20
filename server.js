@@ -1,5 +1,6 @@
 const http = require('http');
 var express = require('express'); 
+//var fs = require('fs');
 
 const hostname = '134.209.14.125';
 const port = 3000;
@@ -17,10 +18,13 @@ app.get('/test', function(req, res) {
 });
 
 
+var port = process.env.PORT || 3000;
+var server = app.listen(port);
 
 
 
-
+/*
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+*/
