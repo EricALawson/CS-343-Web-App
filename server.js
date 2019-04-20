@@ -18,8 +18,8 @@ app.get('/test', function(req, res) {
 });
 
 
-var port = process.env.PORT || 3000;
-var server = app.listen(port);
+//var port = process.env.PORT || 3000;
+//var server = app.listen(port);
 
 
 
