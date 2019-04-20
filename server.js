@@ -9,6 +9,17 @@ const server = http.createServer((req, res) => {
   res.end('Hello World\n');
 });
 
+/*
+var app = express();
+app.get('/test', function(req, res) {
+    res.sendFile('views/test.html', {root: __dirname })
+});
+
+
+
+*/
+
+
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
