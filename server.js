@@ -23,4 +23,6 @@ app.get('/', function(req, res) {
 });
 app.use('/public', express.static(__dirname + "/public"));
 //app.use(express.static(__dirname +'/public'));
-app.listen(3000);
+app.listen(3000, function() {
+	console.log(`Server has started.`);
+});
