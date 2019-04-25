@@ -23,28 +23,36 @@
 Questions
 
 
-I like my games fast, quick, and gameplay focused. +Action -Atmospheric -Story Rich
-I prefer to relax and spend some time with just me and my game. +Singleplayer -Multiplayer
-I prefer to interact with other players when I play games. +multiplayer -singleplayer
-I prefer to relax and take in the scenery in my games +Casual +Great Soundtrack +Atmospheric -Action -Violent
-I like the thrill of the race. +Racing
-I prefer games that feel more old school. +Indie +2D
-I like the most competitive experiences available. +Multiplayer  -Singleplayer
-I prefer games that allow me to blow off heads as well as steam. +shooter +violent -Casual
-I prefer games that immerse me in mystical land. +Fantasy +Openworld +Story Rich +Atmospheric 
-I like a bit of scare in my life. +Horror
-I prefer to relax and think when I play games rather than test my reactions. +Puzzle +Strategy -Action -Racing
-Music is an incredibly important part of my experience in a game. +Great Soundtrack
-I like simulating real life experiences in my games rather than playing in fantasy worlds. +Simulation +Sports -Fantasy -RPG
-I want immerse myself in a character. +RPG +OpenWorld
-Relaxing is the best part of playing a game. +Simulation + Casual +GreatSoundtrack +Atmospheric +Great story -violent -action - horror
-If there isn’t a story, it isn’t worth playing. +RPG +StoryRich -Simulation
-A sense of adventure is the most important thing. +Adventure +OpenWorld -Racing -Sports
-I like to play as my favorite team. +Sports +Racing
-I want to prove that I am the greatest. +Action + Shooter + Multiplayer +Racing
-
-
-Classic adventures like The legend of Zelda are what I am looking for. +Adventure +Puzzle +Singleplayer
-I can sink countless hours into games like Civilization +Strategy
-I love retro games for consoles like the NES, SNES, or even the Playstation one. +Indie
-The Final Fantasy series is among my favorite games. +RPG +Adventure +StoryRich +Singleplayer 
+1. I like my games fast, quick, and gameplay focused. +Action -Atmospheric -Story Rich
+2. I prefer to relax and spend some time with just me and my game. +Singleplayer -Multiplayer
+3. I prefer to interact with other players when I play games. +multiplayer -singleplayer
+4. I prefer to relax and take in the scenery in my games +Casual +Great Soundtrack +Atmospheric -Action -Violent
+5. I like the thrill of the race. +Racing
+6. I prefer games that feel more old school. +Indie +2D
+7. I like the most competitive experiences available. +Multiplayer  -Singleplayer
+8. I prefer games that allow me to blow off heads as well as steam. +shooter +violent -Casual
+9. I prefer games that immerse me in mystical land. +Fantasy +Openworld +Story Rich +Atmospheric 
+10. I like a bit of scare in my life. +Horror
+11. I prefer to relax and think when I play games rather than test my reactions. +Puzzle +Strategy -Action -Racing
+12. Music is an incredibly important part of my experience in a game. +Great Soundtrack
+13. I like simulating real life experiences in my games rather than playing in fantasy worlds. +Simulation +Sports -Fantasy -RPG
+14. I want immerse myself in a character. +RPG +OpenWorld
+15. Relaxing is the best part of playing a game. +Simulation + Casual +GreatSoundtrack +Atmospheric +Great story -violent -action - horror
+16. If there isn’t a story, it isn’t worth playing. +RPG +StoryRich -Simulation
+17. A sense of adventure is the most important thing. +Adventure +OpenWorld -Racing -Sports
+18. I like to play as my favorite team. +Sports +Racing
+19. I want to prove that I am the greatest. +Action + Shooter + Multiplayer +Racing
+20. Classic adventures like The legend of Zelda are what I am looking for. +Adventure +Puzzle +Singleplayer
+21. I can sink countless hours into games like Civilization +Strategy
+22. I love retro games for consoles like the NES, SNES, or even the Playstation one. +Indie
+23. The Final Fantasy series is among my favorite games. +RPG +Adventure +StoryRich +Singleplayer 
+24. Brains over brawn is what I want in a game. +Strategy -Action
+25. Simple controls are the best controls in games. +2D + casual
+26. I like a game that will last me a long time. +OpenWorld +RPG
+27. I prefer first person games. +Shooter -2D -strategy
+28. I feel the need for speed! +Racing
+29. Games are useful tools to vent my rage. +Violent +Multiplayer -Casual
+30. I need more swords and less guns in my life. +Fantasy -Shooter
+31. Sometimes a game should emulate work to take the edge off. +Simulation +Casual
+32. Gotta go fast is a philosophy to live by. +Action +Racing
+33. 
