@@ -15,11 +15,15 @@
 }
 
 html,body{
-    width:100%;
-    height:100%;
-    background-color:#0A1C26;
+    background:linear-gradient(105deg,#0A1C26 ,#4662a8 ,#0A1C26);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin:0px;
     color:white;
+}
+
+a{
+    text-decoration: none;
 }
 
 .accNav{
