@@ -1,5 +1,5 @@
-// Use when initializing a webpage WITHOUT Firestore.
-// If using Firestore on the webpage, use init-firebase-firestore.js instead.
+// Use only when initializing a webpage that utilizes Firestore.
+// If not using Firestore on the webpage, use init-firebase.js instead.
 
 var firebaseConfig = {
 	apiKey: "AIzaSyDZWlHDj1CLih_xRVLGg2JSxTdWTMeGJXU",
@@ -11,3 +11,5 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp( firebaseConfig );
+
+var db = firebase.firestore();
