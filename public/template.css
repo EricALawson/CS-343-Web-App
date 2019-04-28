@@ -156,3 +156,8 @@ input + .loginDiv{
 .accNav label{
     position: relative;
 }
+
+#signOut{
+    display: none;
+    opacity: 0;
+}
