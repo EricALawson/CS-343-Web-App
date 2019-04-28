@@ -20,7 +20,7 @@ var path = require('path');
 var firebase = require( 'firebase' );
 var $ = require("jqeury");
 require( 'firebase/auth' );
-require( 'firebase/database' );
+require( 'firebase/firestore' );
 
 // Configuration for Firebase
 var config = {
