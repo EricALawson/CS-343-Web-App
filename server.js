@@ -18,7 +18,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var firebase = require( 'firebase' );
-var $ = require("jqeury");
+var $ = require("jquery");
 require( 'firebase/auth' );
 require( 'firebase/firestore' );
 
