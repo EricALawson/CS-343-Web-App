@@ -1,2 +1,23 @@
-<h2>Got ya</h2>
-<img src="/public/circlegame.jpg">
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>game.me</title>
+
+		<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+		<!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
+		<script defer src="/public/scripts/init-firebase.js"></script>
+		<script defer src="/public/scripts/loginFunctions.js"></script>
+	</head>
+	<body onload="isLoggedIn();">
+		<h2>Got ya</h2>
+		<div id="loginDiv">
+			<div id="usernameDiv"></div>
+			<button id="loginButton"></button>
+		</div>
+		<img src="/public/circlegame.jpg">
+	</body>
+</html>
