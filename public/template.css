@@ -146,6 +146,15 @@ footer{
     transform: translateY(2vh);
 }
 
+.accNav span:hover, .accNav span:active{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.loginDiv:hover, #signOut:hover{
+    cursor: pointer;
+}
+
 input + .loginDiv{
     border:1px solid black;
 }

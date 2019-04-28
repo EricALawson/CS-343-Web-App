@@ -18,6 +18,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var firebase = require( 'firebase' );
+var $ = require("jqeury");
 require( 'firebase/auth' );
 require( 'firebase/database' );
 
@@ -32,7 +33,7 @@ var config = {
 };
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
+    res.sendFile(path.join(__dirname + '/public/quiz.html'));
 });
 
 app.use('/public', express.static(__dirname + "/public"));

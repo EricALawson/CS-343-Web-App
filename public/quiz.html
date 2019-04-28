@@ -1,38 +1,101 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Game.me</title>
-        <link href="template.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="GameMeLogo.png" type="image/gif" sizes="16x16">
-        <script></script>
-    </head>
-    <body>
-        <header>
+        <!--Style-->
+        <link href="/public/template.css" rel="stylesheet" type="text/css">
+        <link href="/public/quiz.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/public/GameMeLogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <!--scripts-->
+		<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+		<!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
+		<script defer src="/public/scripts/init-firebase.js"></script>
+        <!-- <script defer src="/public/scripts/loginFunctions.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Disabled until API ready<script src=/public/scripts/quiz.js></script>-->
+	</head>
+	<body>
+		<header>
             <nav>
                 <div class="ico">
-                    <a id="logo"><img id="logoImage" src="GameMeLogo.png"></a>
+                    <a id="logo" href="index.html"><img id="logoImage" src="/public/GameMeLogo.png"></a>
                     <h1>Game.Me</h1>
-                </div>
+				</div>
                 <div class="accNav">
-                    <a href="">Sign Up</a>
-                    <a href="">Log in</a>
-                </div>
+					<label>
+						<span>Sign Up</span>
+						<input type="radio" name="login" value="signup">
+						<div class="loginDiv">
+							<p>Username</p><input type="text" name="username" placeholder="Username">
+							<p>Passowrd</p><input type="password" name="password" placeholder="Password">
+							<div class="loginBtns">
+								<button>Sign up!</button>
+							</div>
+						</div>
+					</label>
+					<label>
+						<span>Log in</span>
+						<input type="radio" name="login" value="login">
+						<div class="loginDiv">
+							<p>Username</p><input type="text" name="username" placeholder="Username">
+							<p>Passowrd</p><input type="password" name="password" placeholder="Password">
+							<div class="loginBtns">
+								<button>Log in!</button>
+								<img class="icon" id="googleIco" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
+							</div>
+						</div>
+					</label>
+				</div>
+				<div id="signOut">
+					<p>Sign out</p>
+				</div>
             </nav>
         </header>
         <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus nisl tincidunt eget nullam non nisi. Scelerisque purus semper eget duis at. Erat imperdiet sed euismod nisi. Sed nisi lacus sed viverra tellus in hac. Malesuada pellentesque elit eget gravida. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Porttitor rhoncus dolor purus non enim praesent. Suspendisse potenti nullam ac tortor vitae purus. Dolor sit amet consectetur adipiscing elit duis. Maecenas volutpat blandit aliquam etiam erat. Tincidunt arcu non sodales neque sodales ut etiam sit amet. Orci dapibus ultrices in iaculis nunc sed. Sapien pellentesque habitant morbi tristique senectus et netus et. At quis risus sed vulputate odio ut enim blandit volutpat. Sagittis id consectetur purus ut faucibus pulvinar elementum. Posuere ac ut consequat semper viverra nam libero justo laoreet. Odio morbi quis commodo odio aenean sed adipiscing. Sagittis nisl rhoncus mattis rhoncus urna.
-
-                    Nascetur ridiculus mus mauris vitae ultricies leo integer. Sodales neque sodales ut etiam sit amet. Dui nunc mattis enim ut tellus elementum sagittis vitae. Odio morbi quis commodo odio. Et molestie ac feugiat sed lectus vestibulum mattis. Malesuada nunc vel risus commodo viverra maecenas. Dui ut ornare lectus sit amet est placerat in egestas. In cursus turpis massa tincidunt dui ut. Pellentesque elit eget gravida cum sociis natoque penatibus et. Tristique senectus et netus et malesuada fames ac turpis. Eget aliquet nibh praesent tristique magna sit amet. Egestas diam in arcu cursus euismod quis viverra nibh. Nibh venenatis cras sed felis. Tellus mauris a diam maecenas sed enim ut sem viverra. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.
-                    
-                    Nisi vitae suscipit tellus mauris a diam maecenas. Felis bibendum ut tristique et. Integer quis auctor elit sed vulputate mi sit. Dui sapien eget mi proin sed libero enim sed faucibus. Sit amet risus nullam eget felis. Cras adipiscing enim eu turpis egestas pretium. Nunc sed id semper risus in hendrerit gravida. Felis imperdiet proin fermentum leo vel. At lectus urna duis convallis. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Dui nunc mattis enim ut tellus. Sed sed risus pretium quam vulputate dignissim suspendisse. Scelerisque viverra mauris in aliquam sem. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Ullamcorper sit amet risus nullam. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Quis imperdiet massa tincidunt nunc pulvinar sapien et.
-                    
-                    Et molestie ac feugiat sed lectus. Duis ultricies lacus sed turpis tincidunt id aliquet. Egestas purus viverra accumsan in. Habitant morbi tristique senectus et netus et. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Quis risus sed vulputate odio ut enim. Bibendum ut tristique et egestas quis ipsum suspendisse. Ut enim blandit volutpat maecenas volutpat blandit. Tortor posuere ac ut consequat semper. At lectus urna duis convallis convallis tellus. Eu volutpat odio facilisis mauris sit. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Id faucibus nisl tincidunt eget nullam. Sagittis purus sit amet volutpat consequat mauris. Etiam sit amet nisl purus in mollis. Consequat mauris nunc congue nisi vitae.
-                    
-                    Nulla facilisi etiam dignissim diam quis enim lobortis. Integer quis auctor elit sed. Venenatis cras sed felis eget velit aliquet sagittis. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Nullam eget felis eget nunc. Non blandit massa enim nec dui nunc mattis enim ut. Varius duis at consectetur lorem donec massa sapien. Lacus sed turpis tincidunt id aliquet risus feugiat. Bibendum est ultricies integer quis auctor elit sed. Sit amet aliquam id diam maecenas ultricies. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Rhoncus mattis rhoncus urna neque viverra justo. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Donec pretium vulputate sapien nec. Etiam sit amet nisl purus in. Tristique nulla aliquet enim tortor at auctor. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Congue quisque egestas diam in arcu cursus.</p>
+            <form method="get" action="/url/">
+                <div class="question Q1">
+                    <span>This is an example of an extremely long question for no other reason then being an example of a super long question</span><div><label>Strongly Disagree <input type="radio" name="Q1" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q1" value="MD"></label><label>Neither <input type="radio" name="Q1" value="N"></label><label>Moderatly Agree <input type="radio" name="Q1" value="MA"></label><label>Strongly Agree <input type="radio" name="Q1" value="SA"></label></div>
+                </div>
+                <div class="question Q2">
+                    <span>Question 2</span><div><label>Strongly Disagree <input type="radio" name="Q2" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q2" value="MD"></label><label>Neither <input type="radio" name="Q2" value="N"></label><label>Moderatly Agree <input type="radio" name="Q2" value="MA"></label><label>Strongly Agree <input type="radio" name="Q2" value="SA"></label></div>
+                </div>
+                <div class="question Q3">
+                    <span>Question 3</span><div><label>Strongly Disagree <input type="radio" name="Q3" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q3" value="MD"></label><label>Neither <input type="radio" name="Q3" value="N"></label><label>Moderatly Agree <input type="radio" name="Q3" value="MA"></label><label>Strongly Agree <input type="radio" name="Q3" value="SA"></label></div>
+                </div>
+                <div class="question Q4">
+                    <span>Question 4</span><div><label>Strongly Disagree <input type="radio" name="Q4" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q4" value="MD"></label><label>Neither <input type="radio" name="Q4" value="N"></label><label>Moderatly Agree <input type="radio" name="Q4" value="MA"></label><label>Strongly Agree <input type="radio" name="Q4" value="SA"></label></div>
+                </div>
+                <div class="question Q5">
+                    <span>Question 5</span><div><label>Strongly Disagree <input type="radio" name="Q5" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q5" value="MD"></label><label>Neither <input type="radio" name="Q5" value="N"></label><label>Moderatly Agree <input type="radio" name="Q5" value="MA"></label><label>Strongly Agree <input type="radio" name="Q5" value="SA"></label></div>
+                </div>
+                <div class="question Q6">
+                    <span>Question 6</span><div><label>Strongly Disagree <input type="radio" name="Q6" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q6" value="MD"></label><label>Neither <input type="radio" name="Q6" value="N"></label><label>Moderatly Agree <input type="radio" name="Q6" value="MA"></label><label>Strongly Agree <input type="radio" name="Q6" value="SA"></label></div>
+                </div>
+                <div class="question Q7">
+                    <span>Question 7</span><div><label>Strongly Disagree <input type="radio" name="Q7" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q7" value="MD"></label><label>Neither <input type="radio" name="Q7" value="N"></label><label>Moderatly Agree <input type="radio" name="Q7" value="MA"></label><label>Strongly Agree <input type="radio" name="Q7" value="SA"></label></div>
+                </div>
+                <div class="question Q8">
+                    <span>Question 8</span><div><label>Strongly Disagree <input type="radio" name="Q8" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q8" value="MD"></label><label>Neither <input type="radio" name="Q8" value="N"></label><label>Moderatly Agree <input type="radio" name="Q8" value="MA"></label><label>Strongly Agree <input type="radio" name="Q8" value="SA"></label></div>
+                </div>
+                <div class="question Q9">
+                    <span>Question 9</span><div><label>Strongly Disagree <input type="radio" name="Q9" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q9" value="MD"></label><label>Neither <input type="radio" name="Q9" value="N"></label><label>Moderatly Agree <input type="radio" name="Q9" value="MA"></label><label>Strongly Agree <input type="radio" name="Q9" value="SA"></label></div>
+                </div>
+                <div class="question Q10">
+                    <span>Question 10</span><div><label>Strongly Disagree <input type="radio" name="Q10" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q10" value="MD"></label><label>Neither <input type="radio" name="Q10" value="N"></label><label>Moderatly Agree <input type="radio" name="Q10" value="MA"></label><label>Strongly Agree <input type="radio" name="Q10" value="SA"></label></div>
+                </div>
+                <input type="submit">
+            </form>
         </main>
         <footer>
             <p>Created<br>by<br>343 Studios</p>
             <p>&copy;<b> 343 Studios, All Rights Reserved</b></p>
         </footer>
-    </body>
+	</body>
 </html>

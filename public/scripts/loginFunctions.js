@@ -20,7 +20,7 @@ var googleLogout = () => {
 			window.location.href( "http://localhost:3000" );
 		}).catch( console.log )
 }
-
+//Use Event Listenter
 var isLoggedIn = () => {
 	firebase.auth().onAuthStateChanged( function( user ) {
 		console.log(user);
