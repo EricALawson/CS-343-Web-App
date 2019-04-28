@@ -23,6 +23,21 @@ var googleLogout = () => {
 
 var isLoggedIn = () => {
 	firebase.auth().onAuthStateChanged( function( user ) {
+		console.log(user);
+		/*
+		HTML CHANGED
+
+		Use Event Listeners
+		Ex.
+
+		logOutBtn.addEventListener('click',(e)=>{
+    		//logOut
+    		firebase.auth().signOut();
+    		location.reload();
+    		console.log("log out");
+  		});
+
+
 		if( user ) {
 			document.getElementById( 'usernameDiv' ).innerHTML = `Logged in as ${user.displayName}`;
 			document.getElementById( 'loginButton' ).innerHTML = `Logout`;
@@ -32,5 +47,6 @@ var isLoggedIn = () => {
 			document.getElementById( 'loginButton' ).innerHTML = `Login`;
 			document.getElementById( 'loginButton' ).setAttribute( "onClick", "googleLogin()" );
 		}
+		*/
 	});
 }
