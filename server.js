@@ -11,7 +11,6 @@ var userFuncs = require( './node_scripts/db_functions.js' );
 var $ = require("jquery");
 //FIREBASE CONFIG
 var admin = require("firebase-admin");
-
 require( 'firebase/database' );
 
 var serviceAccount = require("./public/JSON/gameme-6de77-44daabfc2427.json");
@@ -117,5 +116,4 @@ db = admin.database();
 // userFuncs.insertQuiz( "My First Quiz" );
 // // userFuncs.deleteQuiz( "-LdcAFXl64EmL3q_7zgA" );
 
-// userFuncs.readQuizzes( "Jon" );
-// userFuncs.readGameRecs( "Jon" );
+
