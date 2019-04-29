@@ -1,17 +1,17 @@
-var express = require('express');
+var express = require("express");
 var app = express();
-var bodyParser=require("body-parser");
-var path = require('path');
+var bodyParser = require("body-parser");
+var path = require("path");
 var quizListjson = require("./public/JSON/quizlist.json");
 var axios = require("axios");
 var fs = require("fs");
-var urlParser=bodyParser.urlencoded({extended: false});
+var urlParser = bodyParser.urlencoded({ extended: false });
 
-var userFuncs = require( './node_scripts/db_functions.js' );
+var userFuncs = require("./node_scripts/db_functions.js");
 var $ = require("jquery");
 //FIREBASE CONFIG
 var admin = require("firebase-admin");
-require( 'firebase/database' );
+require("firebase/database");
 
 var serviceAccount = require("./public/JSON/gameme-6de77-44daabfc2427.json");
 // Initialize the app with a service account, granting admin privileges
@@ -21,55 +21,53 @@ admin.initializeApp({
 });
 var db = admin.database();
 //------------------------------------------------------------
-app.use('/public', express.static(__dirname + "/public"));
+app.use("/public", express.static(__dirname + "/public"));
 //------------------------------------------------------------
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/quiz.html'));
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/index.html"));
 });
 
 //------------------------------------------------------------
-app.get('/api/quiz/get',function (req,res){
-//Pulls questions from DB and sends to Client
-	var ref=db.ref("Questions");
-	ref.once("value").then((snap)=>{
-		//console.log(snap.val());	
-	var qID=[];
-	var quest=[];
-	
-		var num= Math.round(Math.random()*40)
-		qID.push(num);
-		for(var i =0;i<10;i++){
-			while(qID.indexOf(num)!=-1){
-				num= Math.round(Math.random()*40);
-				
-			}
-			qID.push(num);
-		}
-	
-	qID.sort(function(a, b){return a - b});
-	for(var i =0; i<10;i++)
-		quest.push(snap.val()[qID[i]]);
+app.get("/api/quiz/get", function(req, res) {
+  //Pulls questions from DB and sends to Client
+  var ref = db.ref("Questions");
+  ref.once("value").then(snap => {
+    //console.log(snap.val());
+    var qID = [];
+    var quest = [];
 
-	res.status(200).send({"questions":quest});
-	})
+    var num = Math.round(Math.random() * 40);
+    qID.push(num);
+    for (var i = 0; i < 10; i++) {
+      while (qID.indexOf(num) != -1) {
+        num = Math.round(Math.random() * 40);
+      }
+      qID.push(num);
+    }
 
-})
+    qID.sort(function(a, b) {
+      return a - b;
+    });
+    for (var i = 0; i < 10; i++) quest.push(snap.val()[qID[i]]);
+
+    res.status(200).send({ questions: quest });
+  });
+});
 //------------------------------------------------------------
-app.post('/api/quiz/post',urlParser,function(req,res){
-	//TODO send user to recommendation page with recommendations from DB
-	if(typeof req.body.uid !== 'undefined'){
-		var user = req.body.uid;
-		delete req.body.uid;
-		var ref=db.ref("Users/"+user+"/QuizHistory");
-		ref.push(req.body);
-	}
-	// ref.once("value").then((snap)=>{
-	// 	console.log(snap.val());
-	// })
+app.post("/api/quiz/post", urlParser, function(req, res) {
+  //TODO send user to recommendation page with recommendations from DB
+  if (typeof req.body.uid !== "undefined") {
+    var user = req.body.uid;
+    delete req.body.uid;
+    var ref = db.ref("Users/" + user + "/QuizHistory");
+    ref.push(req.body);
+  }
+  // ref.once("value").then((snap)=>{
+  // 	console.log(snap.val());
+  // })
 
-
-	res.sendFile(path.join(__dirname + "/public/recommendation.html"));
-})
+  res.sendFile(path.join(__dirname + "/public/recommendation.html"));
+});
 //------------------------------------------------------------
 
 //var ref = db.ref();
@@ -82,10 +80,8 @@ app.post('/api/quiz/post',urlParser,function(req,res){
 // });
 //------------------------------------------------------------
 app.listen(3000, function() {
-	console.log(`Server has started.`);
+  console.log(`Server has started.`);
 });
-
-
 
 //POST METHOD FROM DATABASE
 // axios({
@@ -104,12 +100,7 @@ app.listen(3000, function() {
 //       console.error(err);
 // 	});
 
-
-
-
 //  userFuncs.insertGameRec( "Space Engineers" );
 // //userFuncs.deleteGameRec( "-LdbuiKXVFdv2oithkLH" );
 // userFuncs.insertQuiz( "My First Quiz" );
 // // userFuncs.deleteQuiz( "-LdcAFXl64EmL3q_7zgA" );
-
-
