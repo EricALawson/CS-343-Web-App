@@ -45,8 +45,8 @@ app.get('/api/quiz/get',function (req,res){
 })
 
 app.post('/api/quiz/post',urlParser,function(req,res){
-	console.log(req.body);
-	res.render('contact-sucess',{data:req.body});
+	//TODO send user to recommendation page with recommendations from DB
+	res.send({data:req.body});
 })
 
 //app.use(express.static(__dirname +'/public'));
