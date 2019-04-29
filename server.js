@@ -17,10 +17,10 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-const admin = require( 'firebase-admin' );
 var $ = require("jquery");
-require( 'firebase/auth' );
-require( 'firebase/firestore' );
+admin = require( 'firebase-admin' );
+require( 'firebase/database' );
+var userFuncs = require( './node_scripts/usersFunctions.js' );
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
@@ -38,3 +38,12 @@ admin.initializeApp({
 	credential: admin.credential.applicationDefault(),
 	databaseURL: 'https://gameme-6de77.firebaseio.com'
 });
+db = admin.database();
+
+ userFuncs.insertGameRec( "Space Engineers" );
+//userFuncs.deleteGameRec( "-LdbuiKXVFdv2oithkLH" );
+userFuncs.insertQuiz( "My First Quiz" );
+// userFuncs.deleteQuiz( "-LdcAFXl64EmL3q_7zgA" );
+
+userFuncs.readQuizzes( "Jon" );
+userFuncs.readGameRecs( "Jon" );
