@@ -1,5 +1,6 @@
-var usernameDiv = document.getElementById( 'usernameDiv' );
-var loginButton = document.getElementById( 'loginButton' );
+var usernameDiv = document.getElementById( 'username' );
+var loginButton = document.getElementById( 'googleIco' );
+var signOutBtn  = document.getElementById( 'signOut' );
 
 var googleLogin = () => {
 	const provider = new firebase.auth.GoogleAuthProvider();
@@ -20,21 +21,22 @@ var googleLogout = () => {
 		}).catch( console.log )
 }
 
-loginButton.addEventListener( "click", function() {
-	isLoggedIn();
-});
+loginButton.addEventListener("click",googleLogin);
 
 var isLoggedIn = () => {
 	firebase.auth().onAuthStateChanged( function( user ) {
-		console.log(user);
 		if( user ) {
 			usernameDiv.innerHTML = `Logged in as ${user.displayName}`;
-			loginButton.innerHTML = `Logout`;
-			loginButton.setAttribute( "onClick", "googleLogout()" );
+			$("#profPic").attr("src",user.photoURL);
+			$(".loginBtns").removeClass("flex").addClass("hidden");
+			$(".signOut").removeClass("hidden").addClass("flex");
 		} else {
-			usernameDiv.innerHTML = `You are currently not logged in`;
-			loginButton.innerHTML = `Login`;
-			loginButton.setAttribute( "onClick", "googleLogin()" );
+			$(".loginBtns").removeClass("hidden").addClass("flex");
+			$(".signOut").removeClass("flex").addClass("hidden");
 		}
 	});
 }
+
+$(document).ready(isLoggedIn);
+loginButton.addEventListener("click",googleLogin);
+signOutBtn.addEventListener("click",googleLogout);

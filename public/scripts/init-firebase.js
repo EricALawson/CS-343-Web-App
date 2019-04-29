@@ -1,3 +1,4 @@
+
 // Use when initializing a webpage WITHOUT Firestore.
 // If using Firestore on the webpage, use init-firebase-firestore.js instead.
 var firebaseConfig = {
@@ -8,3 +9,4 @@ var firebaseConfig = {
 	storageBucket: "gameme-6de77.appspot.com",
 	messagingSenderId: "1040081357704"
 };
+firebase.initializeApp(firebaseConfig);

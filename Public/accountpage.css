@@ -120,12 +120,6 @@ footer {
     z-index 0s linear 0.01s;
 }
 
-.loginBtns {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 10px;
-}
 
 #googleIco {
   width: 20%;
@@ -170,11 +164,6 @@ input + .loginDiv {
 }
 .accNav label {
   position: relative;
-}
-
-#signOut {
-  display: none;
-  opacity: 0;
 }
 
 .button {

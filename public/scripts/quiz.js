@@ -13,7 +13,17 @@ $(document).ready(function(){
         for(var i=0;i<10;i++)
             for(var j=0;j<5;j++)
                 $(".question label input")[i*5+j].name="Q"+data.questions[i].ID;
-            
+           
+        firebase.auth().onAuthStateChanged( function( user ) {
+            console.log(user);
+            //if(user){
+                //var input = $("input").attr({name:"uid",value:"Jeremiah"}).hide();
+                $("form").append("<input name='uid' value=\'"+user.uid+"\' style='display:none'>");
+           // }
+
+
+
+        })
     })
 
 })
