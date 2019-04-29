@@ -22,3 +22,10 @@ input[type="submit"]{
     height: 50px;
     border-radius: 4%;
 }
+
+label input{
+   margin-left:0px; 
+}
+label{
+    margin-right:5px;
+}

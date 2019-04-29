@@ -1,0 +1,195 @@
+{
+    "questions": 
+    [
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":37,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":3,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":43,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":23,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":51,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":87,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":29,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":94,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":8,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        },
+        {
+            "description": "I like my games fast, quick, and gameplay focused.",
+            "ID":23,
+            "tags": [
+                {
+                    "tag": "Action",
+                    "multiplier" : 	1
+                },
+                {
+                    "tag": "Atmospheric",
+                    "multiplier" : 1
+                },
+                {
+                    "tag": "Story Rich",
+                    "multiplier" : 1
+                }
+            ]
+
+        }
+    ]
+}
