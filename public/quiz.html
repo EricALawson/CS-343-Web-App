@@ -19,7 +19,7 @@
         <!-- <script defer src="/public/scripts/loginFunctions.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <!-- Disabled until API ready<script src=/public/scripts/quiz.js></script>-->
+         <script src=/public/scripts/quiz.js></script>
 	</head>
 	<body>
 		<header>
@@ -59,7 +59,7 @@
             </nav>
         </header>
         <main>
-            <form method="get" action="/url/">
+            <form method="POST" action="/api/quiz/post/">
                 <div class="question Q1" id="Q1">
                     <span>This is an example of an extremely long question for no other reason then being an example of a super long question</span><div><label>Strongly Disagree <input type="radio" name="Q1" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q1" value="MD"></label><label>Neither <input type="radio" name="Q1" value="N"></label><label>Moderatly Agree <input type="radio" name="Q1" value="MA"></label><label>Strongly Agree <input type="radio" name="Q1" value="SA"></label></div>
                 </div>
