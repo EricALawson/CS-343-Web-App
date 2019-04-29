@@ -532,6 +532,134 @@
 					"multiplier" : 1
 				}
 			]
+		},
+		{
+			"description" : "Super Giant games is the best developer.",
+			"ID" : 32,
+			"tags": [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Atmospheric",
+					"multiplier" : 1
+				}
+			] 
+		},
+		{
+			"description": "I like to take my games slowly",
+			"ID" : 33,
+			"tags" : [
+				{
+					"tag" : "RPG",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Strategy",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : -1
+				},
+				{
+					"tag" : "Racing",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I prefer a more onrails experience",
+			"ID" : 34,
+			"tags" : [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Open World",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "A challenge and a great story is what I look for in a game.",
+			"ID" : 35,
+			"tags" : [
+				{
+					"tag" : "Story Rich",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Puzzle",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I miss the old days of arcade games.",
+			"ID" : 36,
+			"tags" : [
+				{
+					"tag" : "2D",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				}, 
+				{
+					"tag" : "Open World",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I like the adrenaline I get from dealing with dangerous and challenging levels.",
+			"ID" : 37,
+			"tags" : [
+				{
+					"tag" : "Horror",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Puzzle",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I like to play games that are not mainstream.",
+			"ID" : 38,
+			"tags" : [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "Pixelated environments and characters are more interesting to see",
+			"ID" : 39,
+			"tags" : [
+				{
+					"tag" : "2D",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Open World",
+					"multiplier" : -1
+				}
+			]
 		}
 	]
 }

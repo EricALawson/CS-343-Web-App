@@ -4,7 +4,7 @@
 3 Adventure
 4 Casual 
 5 Strategy
-6 Simulation?
+6 Simulation
 7 RPG
 8 Singleplayer
 9 Violent
@@ -56,4 +56,11 @@ Questions
 30. I need more swords and less guns in my life. +Fantasy -Shooter
 31. Sometimes a game should emulate work to take the edge off. +Simulation +Casual
 32. Gotta go fast is a philosophy to live by. +Action +Racing
-33. 
+33. Super Giant games is the best developer. +Indie +Atmospheric 
+34. I like to take my games slowly. +RPG +Strategy -Action -Racing
+35. I prefer a more onrails experience. +Indie -Openworld
+36. A challenge and a great story is what I look for in a game. +Story Rich +Puzzle
+37. I miss the old days of arcade games +2D -Openworld
+38.
+39.
+40.
