@@ -19,7 +19,6 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://gameme-6de77.firebaseio.com"
 });
-
 var db = admin.database();
 //------------------------------------------------------------
 app.use('/public', express.static(__dirname + "/public"));
@@ -105,11 +104,8 @@ app.listen(3000, function() {
 //       console.error(err);
 // 	});
 
-admin.initializeApp({
-	credential: admin.credential.applicationDefault(),
-	databaseURL: 'https://gameme-6de77.firebaseio.com'
-});
-db = admin.database();
+
+
 
 //  userFuncs.insertGameRec( "Space Engineers" );
 // //userFuncs.deleteGameRec( "-LdbuiKXVFdv2oithkLH" );
