@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Game.me</title>
-        <!--Style-->
-        <link href="/public/template.css" rel="stylesheet" type="text/css">
-        <link href="/public/quiz.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="/public/GameMeLogo.png" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
         <!--scripts-->
         <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
         <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-        <!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
         <script defer src="/public/scripts/init-firebase.js"></script>
-        <!-- <script defer src="/public/scripts/loginFunctions.js"></script> -->
+        <!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script defer src="/public/scripts/loginFunctions.js"></script>
+
+        <!--Style-->
+        <link href="/public/template.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/public/GameMeLogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <!-- Disabled until API ready<script src=/public/scripts/quiz.js></script>-->
-	</head>
-	<body onload="isLoggedIn();">
-		<header>
+    </head>
+    <body onLoad="isLoggedIn();">
+        <header>
             <nav>
                 <div class="ico">
                     <a id="logo" href="index.html"><img id="logoImage" src="/public/GameMeLogo.png"></a>
                     <h1>Game.Me</h1>
-				</div>
+                </div>
                 <div class="accNav">
-					<label>
-						<span>Sign Up</span>
-						<input type="radio" name="login" value="signup">
-						<div class="loginDiv">
-							<p>Username</p><input type="text" name="username" placeholder="Username">
-							<p>Passowrd</p><input type="password" name="password" placeholder="Password">
-							<div class="loginBtns">
-								<button>Sign up!</button>
-							</div>
-						</div>
-					</label>
-					<label>
-						<span>Log in</span>
-						<input type="radio" name="login" value="login">
-						<div class="loginDiv">
-							<p>Username</p><input type="text" name="username" placeholder="Username">
-							<p>Passowrd</p><input type="password" name="password" placeholder="Password">
-							<div class="loginBtns">
-								<button>Log in!</button>
-								<img class="icon" id="googleIco" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
-							</div>
-						</div>
-					</label>
-				</div>
-				<div id="signOut">
-					<p>Sign out</p>
-				</div>
+                    <label>
+                        <div id="usernameDiv"></div>
+                        <button id="loginButton"></button>
+                        <img class="icon" id="googleIco" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
+                    </label>
+                </div>
+                <div id="signOut">
+                    <p>Sign out</p>
+                </div>
             </nav>
         </header>
         <main>
@@ -73,5 +54,5 @@
             <p>Created<br>by<br>343 Studios</p>
             <p>&copy;<b> 343 Studios, All Rights Reserved</b></p>
         </footer>
-	</body>
+    </body>
 </html>

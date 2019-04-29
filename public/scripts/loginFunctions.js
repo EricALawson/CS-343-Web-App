@@ -1,14 +1,13 @@
-document.addEventListener( "DOMContentLoaded", event => {
-	const app = firebase.app();
-});
+var usernameDiv = document.getElementById( 'usernameDiv' );
+var loginButton = document.getElementById( 'loginButton' );
 
 var googleLogin = () => {
 	const provider = new firebase.auth.GoogleAuthProvider();
 
-	firebase.auth().signInWithPopup( provider )
+	firebase.auth().signInWithRedirect( provider )
 		.then( result => {
 			const user = result.user;
-			window.location.href( "http://localhost:3000" );	//	<==== TODO: Change to user's current web page
+			window.location.reload();
 			console.log( user );
 		})
 		.catch( console.log )
@@ -17,36 +16,25 @@ var googleLogin = () => {
 var googleLogout = () => {
 	firebase.auth().signOut()
 		.then( function() {
-			window.location.href( "http://localhost:3000" );
+			window.location.href = "/public/index.html";
 		}).catch( console.log )
 }
-//Use Event Listenter
+
+loginButton.addEventListener( "click", function() {
+	isLoggedIn();
+});
+
 var isLoggedIn = () => {
 	firebase.auth().onAuthStateChanged( function( user ) {
 		console.log(user);
-		/*
-		HTML CHANGED
-
-		Use Event Listeners
-		Ex.
-
-		logOutBtn.addEventListener('click',(e)=>{
-    		//logOut
-    		firebase.auth().signOut();
-    		location.reload();
-    		console.log("log out");
-  		});
-
-
 		if( user ) {
-			document.getElementById( 'usernameDiv' ).innerHTML = `Logged in as ${user.displayName}`;
-			document.getElementById( 'loginButton' ).innerHTML = `Logout`;
-			document.getElementById( 'loginButton' ).setAttribute( "onClick", "googleLogout()" );
+			usernameDiv.innerHTML = `Logged in as ${user.displayName}`;
+			loginButton.innerHTML = `Logout`;
+			loginButton.setAttribute( "onClick", "googleLogout()" );
 		} else {
-			document.getElementById( 'usernameDiv' ).innerHTML = `You are currently not logged in`;
-			document.getElementById( 'loginButton' ).innerHTML = `Login`;
-			document.getElementById( 'loginButton' ).setAttribute( "onClick", "googleLogin()" );
+			usernameDiv.innerHTML = `You are currently not logged in`;
+			loginButton.innerHTML = `Login`;
+			loginButton.setAttribute( "onClick", "googleLogin()" );
 		}
-		*/
 	});
 }
