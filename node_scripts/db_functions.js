@@ -1,33 +1,29 @@
-exports.insertGameRec = function( gameRec ) {
+exports.insertGameRec = function( uid, gameRec ) {
 	var ref = db.ref( "Users" );
-	var uid = "Jeremiah";
 
 	if ( uid != null ) {
 		ref.child( uid ).child( "GameRec" ).push( gameRec );
 	}
 }
 
-exports.deleteGameRec = function( gameRec ) {
+exports.deleteGameRec = function( uid, gameRec ) {
 	var ref = db.ref( "Users" );
-	var uid = "Jon";
 
 	if ( uid != null ) {
 		ref.child( "/" + uid + "/GameRec/" + gameRec ).remove();
 	}
 }
 
-exports.insertQuiz = function( quiz ) {
+exports.insertQuiz = function( uid, quiz ) {
 	var ref = db.ref( "Users" );
-	var uid = "Jeremiah";
 
 	if ( uid != null ) {
 		ref.child( uid ).child( "QuizHistory" ).push( quiz );
 	}
 }
 
-exports.deleteQuiz = function( quiz ) {
+exports.deleteQuiz = function( uid, quiz ) {
 	var ref = db.ref( "Users" );
-	var uid = "Jon";
 
 	if ( uid != null ) {
 		ref.child( "/" + uid + "/QuizHistory/" + quiz ).remove();

@@ -1,171 +1,7 @@
-@font-face {
-  font-family: "Neuropol";
-  src: url("Fonts/neuropol-x-free/neuropol.ttf");
-}
-
-@font-face {
-  font-family: "Arcade";
-  src: url("Fonts/arcadeclassic/ARCADECLASSIC.TTF");
-}
-
-@font-face {
-  font-family: "Zorque";
-  src: url("Fonts/zorque/zorque.ttf");
-}
-/*Default style*/
-html,
-body {
-  background: linear-gradient(105deg, #0a1c26, #4662a8, #0a1c26);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  margin: 0px;
-  color: white;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 a {
   text-decoration: none;
+  color: white;
 }
-
-.accNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 5%;
-  width: 30%;
-}
-
-.accNav a {
-  margin: 5px 10px;
-}
-
-.ico {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 40%;
-}
-
-.ico h1 {
-  margin: 5px 10px;
-  font-family: "Arcade";
-  font-size: 50px;
-}
-
-.ico a {
-  margin-left: 10%;
-}
-
-#logoImage {
-  border-radius: 20px;
-  width: 100px;
-}
-
-#logoImagebigger {
-  border-radius: 20px;
-  width: 250px;
-}
-
-.currentPage {
-  border-bottom: solid white 1px;
-}
-
-header {
-  background-color: #22323a;
-  padding: 10px 5px;
-  border-bottom: 2px solid white;
-  outline: 5px solid #22323a;
-  font-family: "Neuropol";
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
-main {
-  padding: 2% 5%;
-  font-family: "Zorque";
-}
-
-footer {
-  font-family: "Neuropol";
-  background-color: #536872;
-  padding: 5px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Log in Stlye */
-.loginDiv {
-  background-color: aliceblue;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  padding: 12px 16px;
-  color: black;
-  transform: translateY(-2vh);
-  transition: all 1s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s;
-}
-
-
-#googleIco {
-  width: 20%;
-  border-radius: 50%;
-  background-color: white;
-  transition: transform 0.1s linear, box-shadow 0.1s linear;
-}
-
-#googleIco:hover {
-  box-shadow: 5px 5px 16px 0px black;
-}
-
-#googleIco:active {
-  transform: translateY(2px);
-  box-shadow: 0px 0px 0px 0px black;
-}
-
-:checked + .loginDiv {
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(2vh);
-}
-
-.accNav span:hover,
-.accNav span:active {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.loginDiv:hover,
-#signOut:hover {
-  cursor: pointer;
-}
-
-input + .loginDiv {
-  border: 1px solid black;
-}
-
-.accNav label input[type="radio"] {
-  display: none;
-}
-.accNav label {
-  position: relative;
-}
-
 
 .button {
   display: flex;
@@ -186,6 +22,29 @@ input + .loginDiv {
 }
 
 .buttoncolumn div a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.buttonsmaller {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 16px;
+  color: white;
+}
+
+.buttoncolumnsmaller {
+  display: flex;
+  height: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 16px;
+  color: white;
+}
+
+.buttoncolumnsmaller div a:visited {
   color: white;
   text-decoration: none;
 }

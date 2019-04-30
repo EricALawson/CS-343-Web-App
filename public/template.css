@@ -1,177 +1,172 @@
-@font-face{
-    font-family: "Neuropol";
-    src:url("Fonts/neuropol-x-free/neuropol.ttf");
-
+@font-face {
+  font-family: "Neuropol";
+  src: url("Fonts/neuropol-x-free/neuropol.ttf");
 }
 
-@font-face{
-    font-family: "Arcade";
-    src:url("Fonts/arcadeclassic/ARCADECLASSIC.TTF");
+@font-face {
+  font-family: "Arcade";
+  src: url("Fonts/arcadeclassic/ARCADECLASSIC.TTF");
 }
 
-@font-face{
-    font-family: "Zorque";
-    src:url("Fonts/zorque/zorque.ttf");
+@font-face {
+  font-family: "Zorque";
+  src: url("Fonts/zorque/zorque.ttf");
 }
 /*Default style*/
-html,body{
-    background:linear-gradient(105deg,#0A1C26 ,#4662a8 ,#0A1C26);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    margin:0px;
-    color:white;
+html,
+body {
+  background: linear-gradient(105deg, #0a1c26, #4662a8, #0a1c26);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0px;
+  color: white;
 }
 
-body{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-a{
-    transition:transform 0.1s linear,box-shadow 0.1s linear;
+a {
+  transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
 
-
-.buttoncolumn a{
-    text-decoration: none;
-    color:white;
-    border:3px solid white;
-    border-radius:50px;
-    text-align: center;
-    padding:16px 12px;
-    transition:transform 0.1s linear,box-shadow 0.1s linear;
+.buttoncolumn a {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  text-align: center;
+  padding: 16px 12px;
+  transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
 
-
-a:hover{
-    box-shadow: 5px 5px 16px 0px black;
+a:hover {
+  box-shadow: 5px 5px 16px 0px black;
 }
 
-a:active{
-    transform:translateY(2px);
-    box-shadow: 0px 0px 0px 0px black;
+a:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px 0px black;
 }
 
-
-.accNav{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right:5%;
-    width:30%;
+.accNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+  width: 30%;
 }
 
-.accNav a{
-    margin: 5px 10px;
-
+.accNav a {
+  margin: 5px 10px;
 }
 
-.ico{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width:40%;
+.ico {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
 }
 
-.ico h1{
-    margin: 5px 10px;
-    font-family: "Arcade";
-    font-size:50px;
+.ico h1 {
+  margin: 5px 10px;
+  font-family: "Arcade";
+  font-size: 50px;
 }
 
-.ico a{
-    margin-left:10%;
+.ico a {
+  margin-left: 10%;
 }
 
-#logoImage{
-    border-radius:20px;
-    width:100px;
+#logoImage {
+  border-radius: 20px;
+  width: 100px;
 }
-#logoImage:hover{
-    box-shadow: 0px 0px 20px white;
-}
-
-.currentPage{
-    border-bottom: solid white 1px;
+#logoImage:hover {
+  box-shadow: 0px 0px 20px white;
 }
 
-header{
-    background-color:#22323A;
-    padding:10px 5px;
-    border-bottom: 2px solid white;
-    outline: 5px solid #22323A;
-    font-family: "Neuropol";
+.currentPage {
+  border-bottom: solid white 1px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+header {
+  background-color: #22323a;
+  padding: 10px 5px;
+  border-bottom: 2px solid white;
+  outline: 5px solid #22323a;
+  font-family: "Neuropol";
 }
 
-main{
-    padding: 2% 5%;
-    font-family: "Zorque";
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
+main {
+  padding: 2% 5%;
+  font-family: "Zorque";
+}
 
-footer{
-    font-family: "Neuropol";
-    background-color: #536872;
-    padding:5px 10px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+footer {
+  font-family: "Neuropol";
+  background-color: #536872;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* Log in Stlye */
 
-#googleIco{
-    width: 50px;
-    border-radius: 50%;
-    background-color: white;
-    transition:transform 0.1s linear,box-shadow 0.1s linear;
+#googleIco {
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.1s linear, box-shadow 0.1s linear;
 }
 
-#googleIco:hover{
-    box-shadow: 5px 5px 16px 0px black;
+#googleIco:hover {
+  box-shadow: 5px 5px 16px 0px black;
 }
 
-#googleIco:active{
-    transform:translateY(2px);
-    box-shadow: 0px 0px 0px 0px black;
+#googleIco:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px 0px black;
 }
 
-#profPic{
-    width: 50px;
-    border-radius: 50%;
-    border:1px solid black;
-    box-shadow: 2px 2px 10px black;
-    margin-right: 10px;
+#profPic {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px black;
+  margin-right: 10px;
 }
 
-.loginBtns{
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
+.loginBtns {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.signOut{
-    align-items: center;
-    justify-content: space-around;
+.signOut {
+  align-items: center;
+  justify-content: space-around;
 }
 
-.hidden{
-    display:none;
+.hidden {
+  display: none;
 }
 
-.visible{
-    display:initial;
+.visible {
+  display: initial;
 }
 
-.flex{
-    display:flex;
+.flex {
+  display: flex;
 }
