@@ -54,14 +54,34 @@ app.get("/api/quiz/get", function(req, res) {
   });
 });
 //------------------------------------------------------------
+var anonUser=[]
+
+function stringToInt(str){
+  return parseInt(str.split('').map((val)=>{
+    return val.charCodeAt(0);
+  }).reduce((val,sum)=>{
+    return val+""+sum;
+  }));
+}
 app.post("/api/quiz/post", urlParser, function(req, res) {
-  //TODO send user to recommendation page with recommendations from DB
+  console.log(req.body.uid.indexOf("cookie:"));
   if (typeof req.body.uid !== "undefined") {
+    if(req.body.uid.indexOf("cookie:")!=-1){
+      var user = req.body.uid;
+      delete req.body.uid;
+      console.log(user);
+      user=user.substring(7);
+      user= stringToInt(user);
+      anonUser[user%1000]=req.body;
+    }
+    else{
     var user = req.body.uid;
     delete req.body.uid;
     var ref = db.ref("Users/" + user + "/QuizHistory");
     ref.push(req.body);
+    }
   }
+
   // ref.once("value").then((snap)=>{
   // 	console.log(snap.val());
   // })

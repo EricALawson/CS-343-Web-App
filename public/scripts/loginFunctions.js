@@ -26,10 +26,19 @@ loginButton.addEventListener("click",googleLogin);
 var isLoggedIn = () => {
 	firebase.auth().onAuthStateChanged( function( user ) {
 		if( user ) {
-			usernameDiv.innerHTML = `Logged in as ${user.displayName}`;
-			$("#profPic").attr("src",user.photoURL);
-			$(".loginBtns").removeClass("flex").addClass("hidden");
-			$(".signOut").removeClass("hidden").addClass("flex");
+			if(!user.isAnonymous){
+				usernameDiv.innerHTML = `Logged in as ${user.displayName}`;
+				$("#profPic").attr("src",user.photoURL);
+				$(".loginBtns").removeClass("flex").addClass("hidden");
+				$(".signOut").removeClass("hidden").addClass("flex");
+			}
+			else{
+				usernameDiv.innerHTML = `Logged in as Anonymous User`;
+				$("#profPic").attr("src","/public/genProfPic.png");
+				$(".loginBtns").removeClass("flex").addClass("hidden");
+				$(".signOut").removeClass("hidden").addClass("flex");
+			}
+
 		} else {
 			$(".loginBtns").removeClass("hidden").addClass("flex");
 			$(".signOut").removeClass("flex").addClass("hidden");
