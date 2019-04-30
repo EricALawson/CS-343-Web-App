@@ -66,7 +66,7 @@ app.post("/api/quiz/post", urlParser, function(req, res) {
   // 	console.log(snap.val());
   // })
 
-  res.sendFile(path.join(__dirname + "/public/recommendation.html"));
+  res.sendFile(path.join(__dirname + "/Public/recommendation.html"));
 });
 //------------------------------------------------------------
 
