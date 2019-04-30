@@ -6,7 +6,8 @@ const gamelist_API_URL = 'https://api.steampowered.com/IStoreService/GetAppList/
 const fs = require('fs');
 const cacheWriteDelay = 1000 //milliseconds between writing each game to a cache file.
 
-exports.updateGameCache = function() {
+
+function updateGameCache() {
     var gameList = new Promise((resolve, reject) => {
         https.get(gamelist_API_URL, (resp) => {
             let data = '';
@@ -18,6 +19,7 @@ exports.updateGameCache = function() {
             resp.on('end', () => {
                 //var games = JSON.parse(data).applist.apps;
                 var games = JSON.parse(data).response.apps;
+                console.log("before resolve.")
                 resolve(games);
             });
         }).on("error", (err) => {
@@ -37,20 +39,10 @@ exports.updateGameCache = function() {
                 clearInterval(gameWriteLoop);
             }
         }, cacheWriteDelay)
-
-    });
-}
-
-function writeCacheFile(gameJSON) {
-    path = "cache/" + gameJSON.name + ".json";
-    content = JSON.stringify(gameJSON);
-    fs.writeFile(path, content, (err) => {
-        if (err) {
-            console.error("could not write file for " + JSON.stringify(gameJSON));
-            console.error(err);
-        }
     })
 }
+
+
 
 function webscrapeGame(gameJSON) {
     return promise = new Promise((resolve, reject) => {

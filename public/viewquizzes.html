@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Game.me</title>
+            <!--Style-->
+            <link href="/public/template.css" rel="stylesheet" type="text/css">
+            <link href="/public/viewquizzes.css" rel="stylesheet" type="text/css">
+            <link rel="icon" href="/public/GameMeLogo.png" type="image/gif" sizes="16x16">
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+            
+            <!--scripts-->
+        <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+        <!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
+        <script defer src="/public/scripts/init-firebase.js"></script>
+             <script defer src="/public/scripts/loginFunctions.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+             <script src=/public/scripts/viewquizzes.js></script>
+      </head>
+  <body>
+      <header>
+          <nav>
+              <div class="ico">
+                  <a id="logo" href="/public/index.html"><img id="logoImage" src="/public/GameMeLogo.png"></a>
+                  <h1>Game.Me</h1>
+      </div>
+              <div class="accNav">
+                  <div class="loginBtns flex">
+                          <p>Sign in with Google!</p>
+            <img class="icon" id="googleIco" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
+        </div>
+                  <div class="signOut hidden">
+                      <img id="profPic" alt="Profile Pic" src="">
+                      <p id="username"></p>
+            <p id="signOut">Sign out</p>
+            </div>
+      </div>
+    
+          </nav>
+      </header>
+    <main>
+      <div class="button">
+        <div>
+          <a><center>Quizzes Here</center></a>
+        </div>
+        <div class="buttoncolumn">
+          <a href="/public/quiz.html"><center>Take A Quiz</center></a>
+          <a href="/public/viewrecommendations.html"
+            ><center>Recommendations</center></a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Created<br />by<br />343 Studios</p>
+      <p>&copy;<b> 343 Studios, All Rights Reserved</b></p>
+    </footer>
+  </body>
+</html>

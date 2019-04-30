@@ -3,7 +3,6 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var path = require("path");
-var quizListjson = require("./public/JSON/quizlist.json");
 var axios = require("axios");
 var fs = require("fs");
 var urlParser = bodyParser.urlencoded({ extended: false });
@@ -66,7 +65,7 @@ app.post("/api/quiz/post", urlParser, function(req, res) {
   // 	console.log(snap.val());
   // })
 
-  res.sendFile(path.join(__dirname + "/Public/recommendation.html"));
+  res.sendFile(path.join(__dirname + "/public/recommendation.html"));
 });
 //------------------------------------------------------------
 
@@ -197,3 +196,4 @@ function webscrapeGame(gameJSON) {
         });
     });
 }
+
