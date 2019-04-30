@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="397a6d26-17dc-4199-92d8-8bb7408f234a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/accountpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/accountpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/recommendation_old.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/recommendation_old.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/scripts/gameme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/scripts/viewquizzes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/scripts/viewrecommendations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/viewquizzes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/viewquizzes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/viewrecommendations.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Public/viewrecommendations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_scripts/db_functions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/arcadeclassic/ARCADECLASSIC.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/arcadeclassic/pizzadudedotdk.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/neuropol-x-free/neuropol.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/neuropol-x-free/read-this.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/neuropol-x-free/typodermic-eula-02-2014.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/zorque/read-this.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/zorque/typodermic-eula-02-2014.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Fonts/zorque/zorque.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/GameMeLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/JSON/gameme-6de77-44daabfc2427.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/JSON/games.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/JSON/igdb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/JSON/questions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/JSON/quizList.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/questions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/quiz.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/quiz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/recommendation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/recommendation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scripts/init-firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scripts/loginFunctions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scripts/quiz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scripts/recommendation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scripts/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/svg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/circlegame.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/circlegame.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-initialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,20 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="497">
+              <caret line="152" column="25" lean-forward="true" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cache.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state>
+              <caret lean-forward="true" selection-end-line="6" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin-initialize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -108,13 +74,14 @@
         <option value="$PROJECT_DIR$/webscrape.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/cache.js" />
+        <option value="$PROJECT_DIR$/admin-initialize.js" />
         <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
+    <option name="x" value="12" />
+    <option name="y" value="40" />
     <option name="width" value="1400" />
     <option name="height" value="787" />
   </component>
@@ -131,11 +98,6 @@
             <path>
               <item name="CS-343-Web-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Documents/GitHub/CS-343-Web-App" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="CS-343-Web-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/CS-343-Web-App" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -197,41 +159,83 @@
       <option name="project" value="LOCAL" />
       <updated>1555988369300</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="merging cache into server.js">
+      <created>1556595739334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556595739334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29014000" />
+    <option name="totallyTimeSpent" value="34314000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="787" extended-state="0" />
+    <frame x="12" y="40" width="1400" height="787" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3294964" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42446044" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42446044" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3294964" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294964" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3294964" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.42446044" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294964" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test project VCS." />
-    <option name="LAST_COMMIT_MESSAGE" value="test project VCS." />
+    <MESSAGE value="merging cache into server.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="merging cache into server.js" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cache.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -246,19 +250,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/cache/Mini Thief.json" />
+    <entry file="file://$PROJECT_DIR$/cache/Beater Spirit.json" />
+    <entry file="file://$PROJECT_DIR$/Public/questions.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="-128">
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cache/Mini Thief.json" />
-    <entry file="file://$PROJECT_DIR$/cache/Beater Spirit.json" />
     <entry file="file://$PROJECT_DIR$/cache.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state>
+          <caret lean-forward="true" selection-end-line="6" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-initialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="152" column="25" lean-forward="true" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
         </state>
       </provider>
     </entry>
