@@ -1,0 +1,665 @@
+
+{
+	"Questions":
+	[ 
+		{
+			"description": "I like my games fast, quick, and gameplay focused.",
+			"ID": 0,
+			"tags": [
+				{
+					"tag": "Action",
+					"multiplier" : 1
+				},
+				{
+					"tag": "Atmospheric",
+					"multiplier" : -1
+				},
+				{
+					"tag": "Story Rich",
+					"multiplier" : -1
+				}
+			]
+		
+		},
+		{
+			"description": "I prefer to relax and spend some time with just me and my game.",
+			"ID": 1,
+			"tags": [
+				{
+					"tag": "Singleplayer",
+					"multiplier" : 1
+				},
+				{
+					"tag": "Multiplayer",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I prefer to interact with other players when I play games.",
+			"ID": 2,
+			"tags": [
+				{
+					"tag": "Multiplayer",
+					"multiplier" : 1
+				},
+				{
+					"tag": "Singleplayer",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I prefer to relax and take in the scenery in my games.",
+			"ID": 3,
+			"tags": [
+				{
+					"tag": "Casual",
+					"multiplier": 1
+				},
+				{
+					"tag": "Great Soundtrack",
+					"multiplier" : 1
+				},
+				{
+					"tag": "Atmospheric",
+					"multiplier" : 1
+				},
+				{
+					"tag": "Action", 
+					"multiplier" : -1
+				},
+				{
+					"tag": "Violent",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description" : "I like the thrill of the chase.",
+			"ID":4 , 
+			"tags": [
+				{
+					"tag": "Racing",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I prefer games that feel more old school.",
+			"ID":5,
+			"tags": [
+				{
+					"tag": "Indie",
+					"multiplier": 1
+				},
+				{
+					"tag": "2D",
+					"multiplier": 1
+				}
+			]
+		},
+		{
+			"description": "I like the most competitive experiences available.",
+			"ID" :6,
+			"tags" : [
+				{
+					"tag": "Multiplayer",
+					"multiplier" : 1
+				},
+				{
+					"tag": "Singleplayer", 
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I prefer games that allow me to blow off heads as well as steam.",
+			"ID" : 7,
+			"tags": [
+				{
+					"tag": "Shooter",
+					"multiplier": 1
+				},
+				{
+					"tag": "Violent",
+					"multiplier": 1
+				},
+				{
+					"tag": "Casual",
+					"multiplier": -1
+				}
+			]
+		},
+		{
+			"description": "I prefer games that immerse me in mystical land.",
+			"ID": 8,
+			"tags": [
+				{
+					"tag": "Fantasy",
+					"multiplier": 1
+				},
+				{
+					"tag": "Open World",
+					"multiplier": 1
+				},
+				{
+					"tag": "Story Rich",
+					"multiplier": 1
+				},
+				{
+					"tag": "Atmospheric",
+					"multiplier": 1
+				}
+			]
+		},
+		{
+			"description": "I like a bit of scare in my life.",
+			"ID" : 9,
+			"tags": [
+				{
+					"tag": "Horror",
+					"multiplier": 1
+				}
+			]
+		},
+		{
+			"description": "I prefer to relax and think when I play games rather than test my reactions.",
+			"ID" : 10,
+			"tags": [
+				{
+					"tag": "Puzzle",
+					"multiplier": 1
+				},
+				{
+					"tag" : "Strategy",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : -1				
+				},
+				{
+					"tag" : "Racing",
+					"multiplier" : -1
+				}
+			]	
+		},
+		{
+			"description": "Music is an incredibly important part of my experience in a game.",
+			"ID" : 11,
+			"tags": [
+				{
+					"tag": "Great Soundtrack",
+					"multiplier": 1
+				}
+			]
+		},
+		{
+			"description": "I like simulating real life experiences in my games rather than playing in fantasy worlds.",
+			"ID": 12,
+			"tags": [
+					{
+						"tag": "Simulation",
+						"multiplier": 1
+					},
+					{
+						"tag:": "Sports",
+						"multiplier": 1
+					},
+					{
+						"tag": "Fantasy",
+						"multiplier": -1
+					},
+					{
+						"tag": "RPG",
+						"multiplier": -1
+					}
+			]
+		},
+		{
+			"description": "I want to immerse myself in a character.",
+			"ID" : 13,
+			"tags": [
+					{
+						"tag" : "RPG",
+						"multiplier": 1
+					},
+					{
+						"tag" : "Open World", 
+						"multiplier": 1
+					}
+			]
+		},
+		{
+			"description": "Relaxing is the best part of playing a game.",
+			"ID" : 14,
+			"tags": [
+					{
+						"tag" : "Simulation",
+						"multiplier" : 1
+					},
+					{
+						"tag" : "Casual",
+						"multiplier" : 1
+					},
+					{
+						"tag" : "Great Soundtrack",
+						"multiplier" : 1
+					},
+					{
+						"tag" : "Atmospheric",
+						"multiplier" : 1
+					},
+					{
+						"tag" : "Story Rich",
+						"multiplier" : 1
+					},
+					{
+						"tag" : "Violent",
+						"multiplier" : -1
+					},
+					{
+						"tag" : "Action",
+						"multiplier" : -1
+					},
+					{
+						"tag" : "Horror",
+						"multiplier" : -1
+					}
+
+			]
+		},
+		{
+			"description" : "If there isn’t a story, it isn’t worth playing.",
+			"ID": 15,
+			"tags" : [
+				{
+					"tag" : "RPG",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Story Rich",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Simulation",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description" : "A sense of adventure is the most important thing.",
+			"ID": 16,
+			"tags" : [
+				{
+					"tag" : "Adventure", 
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Open World", 
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Racing",
+					"multiplier" : -1
+				},
+				{
+					"tag" : "Sports",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I like to play as my favorite team.",
+			"ID" : 17,
+			"tags" : [
+				{
+					"tag" : "Sports",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Racing",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I want to prove that I am the greatest.",
+			"ID" : 18,
+			"tags" : [
+				{
+					"tag" : "Action",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Shooter",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Multiplayer",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "Classic adventures like The legend of Zelda are what I am looking for.",
+			"ID" : 19,
+			"tags" : [
+				{
+					"tag" : "Adventure",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Puzzle",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Singleplayer",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I can sink countless hours into games like Civilization",
+			"ID" : 20,
+			"tags" : [
+				{
+					"tag" : "Strategy",
+					"multiplier": 1
+				}
+			]
+		},
+		{
+			"description": "I love retro games for consoles like the NES, SNES, or even the Playstation one.",
+			"ID" : 21,
+			"tags" : [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "The Final Fantasy series is among my favorite games.",
+			"ID" : 22,
+			"tags" : [
+				{
+					"tag" : "RPG",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Adventure",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Story Rich",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Singleplayer",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description" : "Brains over brawn is what I want in a game.",
+			"ID" : 23,
+			"tags" : [
+				{
+					"tag" : "Strategy",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : -1
+				}
+			]
+
+		},
+		{
+			"description" : "Simple controls are the best controls in games.",
+			"ID" : 24,
+			"tags" : [
+				{
+					"tag" : "2D",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Casual",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description" : "I like a game that will last me a long time.",
+			"ID" : 25,
+			"tags" : [
+				{
+					"tag" : "Open World",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "RPG",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description" : "I prefer first person games.",
+			"ID" : 26,
+			"tags" : [
+				{
+					"tag" : "Shooter",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "2D",
+					"multiplier" : -1
+				},
+				{
+					"tag" : "Strategy",
+					"multiplier" : -1
+				}
+			] 
+		},
+		{
+			"description" : "I feel the need for speed!",
+			"ID": 27,
+			"tags" : [
+				{
+					"tag" : "Racing",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description" : "Games are useful tools to vent my rage.",
+			"ID" : 28,
+			"tags" : [
+				{
+					"tag" : "Violent",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Multiplayer",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Casual",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description" : "I need more swords and less guns in my life.",
+			"ID" : 29, 
+			"tags" : [
+				{
+					"tag" : "Fantasy",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Shooter",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description" : "Sometimes a game should emulate work to take the edge off.",
+			"ID" : 30,
+			"tags" : [
+				{
+					"tag" : "Simulation",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Casual",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "Gotta go fast is a philosophy to live by.",
+			"ID": 31,
+			"tags": [
+				{
+					"tag" : "Action",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Racing",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description" : "Super Giant games is the best developer.",
+			"ID" : 32,
+			"tags": [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Atmospheric",
+					"multiplier" : 1
+				}
+			] 
+		},
+		{
+			"description": "I like to take my games slowly",
+			"ID" : 33,
+			"tags" : [
+				{
+					"tag" : "RPG",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Strategy",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : -1
+				},
+				{
+					"tag" : "Racing",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I prefer a more onrails experience",
+			"ID" : 34,
+			"tags" : [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Open World",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "A challenge and a great story is what I look for in a game.",
+			"ID" : 35,
+			"tags" : [
+				{
+					"tag" : "Story Rich",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Puzzle",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I miss the old days of arcade games.",
+			"ID" : 36,
+			"tags" : [
+				{
+					"tag" : "2D",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				}, 
+				{
+					"tag" : "Open World",
+					"multiplier" : -1
+				}
+			]
+		},
+		{
+			"description": "I like the adrenaline I get from dealing with dangerous and challenging levels.",
+			"ID" : 37,
+			"tags" : [
+				{
+					"tag" : "Horror",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Puzzle",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "I like to play games that are not mainstream.",
+			"ID" : 38,
+			"tags" : [
+				{
+					"tag" : "Indie",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Action",
+					"multiplier" : 1
+				}
+			]
+		},
+		{
+			"description": "Pixelated environments and characters are more interesting to see",
+			"ID" : 39,
+			"tags" : [
+				{
+					"tag" : "2D",
+					"multiplier" : 1
+				},
+				{
+					"tag" : "Open World",
+					"multiplier" : -1
+				}
+			]
+		}
+	]
+}

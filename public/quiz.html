@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Game.me</title>
+        <!--Style-->
+        <link href="/public/template.css" rel="stylesheet" type="text/css">
+        <link href="/public/quiz.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/public/GameMeLogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <!--scripts-->
+		<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+		<!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
+		<script defer src="/public/scripts/init-firebase.js"></script>
+         <script defer src="/public/scripts/loginFunctions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+         <script src=/public/scripts/quiz.js></script>
+	</head>
+	<body>
+		<header>
+            <nav>
+                <div class="ico">
+                    <a id="logo" href="/public/index.html"><img id="logoImage" src="/public/GameMeLogo.png"></a>
+                    <h1>Game.Me</h1>
+				</div>
+                <div class="accNav">
+                    <div class="loginBtns flex">
+                            <p>Sign in with Google!</p>
+							<img class="icon" id="googleIco" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
+					</div>
+                    <div class="signOut hidden">
+                        <img id="profPic" alt="Profile Pic" src="">
+                        <p id="username"></p>
+					    <p id="signOut">Sign out</p>
+			        </div>
+				</div>
+			
+            </nav>
+        </header>
+        <main>
+            <form method="POST" action="/api/quiz/post/" id="quiz">
+                <div class="question Q1" id="Q1">
+                    <span>This is an example of an extremely long question for no other reason then being an example of a super long question</span><div><label>Strongly Disagree <input type="radio" name="Q1" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q1" value="MD"></label><label>Neither <input type="radio" name="Q1" value="N"></label><label>Moderatly Agree <input type="radio" name="Q1" value="MA"></label><label>Strongly Agree <input type="radio" name="Q1" value="SA"></label></div>
+                </div>
+                <div class="question Q2" id="Q2">
+                    <span>Question 2</span><div><label>Strongly Disagree <input type="radio" name="Q2" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q2" value="MD"></label><label>Neither <input type="radio" name="Q2" value="N"></label><label>Moderatly Agree <input type="radio" name="Q2" value="MA"></label><label>Strongly Agree <input type="radio" name="Q2" value="SA"></label></div>
+                </div>
+                <div class="question Q3" id="Q3">
+                    <span>Question 3</span><div><label>Strongly Disagree <input type="radio" name="Q3" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q3" value="MD"></label><label>Neither <input type="radio" name="Q3" value="N"></label><label>Moderatly Agree <input type="radio" name="Q3" value="MA"></label><label>Strongly Agree <input type="radio" name="Q3" value="SA"></label></div>
+                </div>
+                <div class="question Q4" id="Q4">
+                    <span>Question 4</span><div><label>Strongly Disagree <input type="radio" name="Q4" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q4" value="MD"></label><label>Neither <input type="radio" name="Q4" value="N"></label><label>Moderatly Agree <input type="radio" name="Q4" value="MA"></label><label>Strongly Agree <input type="radio" name="Q4" value="SA"></label></div>
+                </div>
+                <div class="question Q5" id="Q5">
+                    <span>Question 5</span><div><label>Strongly Disagree <input type="radio" name="Q5" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q5" value="MD"></label><label>Neither <input type="radio" name="Q5" value="N"></label><label>Moderatly Agree <input type="radio" name="Q5" value="MA"></label><label>Strongly Agree <input type="radio" name="Q5" value="SA"></label></div>
+                </div>
+                <div class="question Q6" id="Q6">
+                    <span>Question 6</span><div><label>Strongly Disagree <input type="radio" name="Q6" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q6" value="MD"></label><label>Neither <input type="radio" name="Q6" value="N"></label><label>Moderatly Agree <input type="radio" name="Q6" value="MA"></label><label>Strongly Agree <input type="radio" name="Q6" value="SA"></label></div>
+                </div>
+                <div class="question Q7" id="Q7">
+                    <span>Question 7</span><div><label>Strongly Disagree <input type="radio" name="Q7" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q7" value="MD"></label><label>Neither <input type="radio" name="Q7" value="N"></label><label>Moderatly Agree <input type="radio" name="Q7" value="MA"></label><label>Strongly Agree <input type="radio" name="Q7" value="SA"></label></div>
+                </div>
+                <div class="question Q8" id="Q8">
+                    <span>Question 8</span><div><label>Strongly Disagree <input type="radio" name="Q8" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q8" value="MD"></label><label>Neither <input type="radio" name="Q8" value="N"></label><label>Moderatly Agree <input type="radio" name="Q8" value="MA"></label><label>Strongly Agree <input type="radio" name="Q8" value="SA"></label></div>
+                </div>
+                <div class="question Q9" id="Q9">
+                    <span>Question 9</span><div><label>Strongly Disagree <input type="radio" name="Q9" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q9" value="MD"></label><label>Neither <input type="radio" name="Q9" value="N"></label><label>Moderatly Agree <input type="radio" name="Q9" value="MA"></label><label>Strongly Agree <input type="radio" name="Q9" value="SA"></label></div>
+                </div>
+                <div class="question Q10" id="Q10">
+                    <span>Question 10</span><div><label>Strongly Disagree <input type="radio" name="Q10" value="SD"></label><label>Moderatly Disagree <input type="radio" name="Q10" value="MD"></label><label>Neither <input type="radio" name="Q10" value="N"></label><label>Moderatly Agree <input type="radio" name="Q10" value="MA"></label><label>Strongly Agree <input type="radio" name="Q10" value="SA"></label></div>
+                </div>
+                <input type="submit">
+            </form>
+        </main>
+        <footer>
+            <p>Created<br>by<br>343 Studios</p>
+            <p>&copy;<b> 343 Studios, All Rights Reserved</b></p>
+        </footer>
+	</body>
+</html>
