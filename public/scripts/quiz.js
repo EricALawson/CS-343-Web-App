@@ -20,7 +20,7 @@ $(document).ready(function(){
    /* $.get("http://134.209.14.125:3000/api/quiz",function(data,status){
         console.log(data);
     })*/
-    $.get("http://localhost:3000/api/quiz/get",function(data,status){
+    $.get("http://134.209.14.125:3000/api/quiz/get",function(data,status){
         quizQuestions = data;
         for(var i=0;i<10;i++){
             $(".question span")[i].innerHTML=data.questions[i].description;

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $.get("http://localhost:3000/api/reccomendation?userid="+getCookie("userid"),function(data,status){
+    $.get("http://134.209.14.125:3000/api/reccomendation?userid="+getCookie("userid"),function(data,status){
         
       for(var key in data){
         var para = document.createElement("p");
