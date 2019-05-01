@@ -3,7 +3,7 @@ $(document).ready(function(){
         
       for(var key in data){
         var para = document.createElement("a");
-        para.attributes.setAttribute("href","https://store.steampowered.com/app/"+data[key].appid)
+        para.setAttribute("href","https://store.steampowered.com/app/"+data[key].appid)
         var node = document.createTextNode(""+data[key].name+", Score:"+data[key].reviewRatio);
         para.appendChild(node);
 
