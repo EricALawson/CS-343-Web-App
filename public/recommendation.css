@@ -54,6 +54,6 @@ a {
   flex-direction: column;
 }
 
-#recs p{
+#recs a{
   font-size:20px;
 }

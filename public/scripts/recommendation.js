@@ -2,7 +2,8 @@ $(document).ready(function(){
     $.get("http://134.209.14.125:3000/api/reccomendation?userid="+getCookie("userid"),function(data,status){
         
       for(var key in data){
-        var para = document.createElement("p");
+        var para = document.createElement("a");
+        para.attributes.setAttribute("href","https://store.steampowered.com/app/"+data[key].appid)
         var node = document.createTextNode(""+data[key].name+", Score:"+data[key].reviewRatio);
         para.appendChild(node);
 
