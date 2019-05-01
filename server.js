@@ -3,7 +3,6 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var path = require("path");
-var quizListjson = require("./public/JSON/quizlist.json");
 var axios = require("axios");
 var fs = require("fs");
 var urlParser = bodyParser.urlencoded({ extended: false });
