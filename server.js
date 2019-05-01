@@ -54,10 +54,45 @@ app.get("/api/quiz/get", function(req, res) {
   });
 });
 //------------------------------------------------------------
-app.get("/api/reccomendation?",urlParser,function(req,res){
-  console.log(req)
-
-  res.status(200).send({data:"working"});
+app.get("/api/reccomendation?",function(req,res){
+  var userid;
+  var gameList=[];
+  console.log(req.query.userid);
+  var ref = db.ref("gameCache");
+  ref.once("value").then(snap=>{
+  //   if(typeof req.query.userid != "undefined"){
+  //     if(req.query.userid.indexOf("cookie")!=-1)
+  //       userid=stringToInt(req.query.userid.substring(7));
+  //   }
+  //   else{
+  //     var ref = db.ref("gameCache");
+  //     ref.once("value").then((snap)=>{
+  //       console.log("db connected");
+  //       var count=0;
+  //       while(count < 6){
+  //         var temp = snap.val()[Math.round(Math.random()*100000)];
+  //         console.log(temp);
+  //         if(temp.reviewRatio>60){
+  //           gameList.push(temp);
+  //           count++;
+  //         }
+  //       }
+        
+  //   })
+  // }
+    var count =0;
+    while(count < 6){
+      var num = Math.round(Math.random()*100000)*10;
+      var temp = snap.val()[num];
+      if(typeof temp != "undefined")
+        if(temp.reviewRatio>50){
+          gameList.push(temp);
+          count++;
+        }
+    }
+    res.status(200).send(gameList);
+  })
+  
 })
 //------------------------------------------------------------
 var anonUser=[]

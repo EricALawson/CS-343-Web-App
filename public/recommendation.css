@@ -48,3 +48,12 @@ a {
   color: white;
   text-decoration: none;
 }
+
+#recs{
+  display:flex;
+  flex-direction: column;
+}
+
+#recs p{
+  font-size:20px;
+}

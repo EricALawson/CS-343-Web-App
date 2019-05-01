@@ -1,7 +1,17 @@
 $(document).ready(function(){
     $.get("http://localhost:3000/api/reccomendation?userid="+getCookie("userid"),function(data,status){
-        console.log(data);
+        
+      for(var key in data){
+        var para = document.createElement("p");
+        var node = document.createTextNode(""+data[key].name+", Score:"+data[key].reviewRatio);
+        para.appendChild(node);
+
+        var element = document.getElementById("recs");
+        element.appendChild(para);
+      }
+      
     })
+      
 });
 
 function getCookie(cname) {
@@ -19,3 +29,4 @@ function getCookie(cname) {
     }
     return "";
   }
+
