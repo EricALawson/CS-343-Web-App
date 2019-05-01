@@ -4,8 +4,7 @@ $(document).ready(function(){
     firebase.auth().onAuthStateChanged( function( user ) {
         var formID;
         if(user){
-            formID=userid;
-            setCookie(userid,userid,1);
+            setCookie("userid",user.uid,1);
         }
         else{
             if(getCookie("userid").indexOf("cookie:")==-1){
@@ -30,11 +29,6 @@ $(document).ready(function(){
         for(var i=0;i<10;i++)
             for(var j=0;j<5;j++)
                 $(".question label input")[i*5+j].name="Q"+data.questions[i].ID;
-           
-
-        
-
-
     })
 
 })

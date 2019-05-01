@@ -54,6 +54,12 @@ app.get("/api/quiz/get", function(req, res) {
   });
 });
 //------------------------------------------------------------
+app.get("/api/reccomendation?",urlParser,function(req,res){
+  console.log(req)
+
+  res.status(200).send({data:"working"});
+})
+//------------------------------------------------------------
 var anonUser=[]
 
 function stringToInt(str){
@@ -64,12 +70,10 @@ function stringToInt(str){
   }));
 }
 app.post("/api/quiz/post", urlParser, function(req, res) {
-  console.log(req.body.uid.indexOf("cookie:"));
   if (typeof req.body.uid !== "undefined") {
     if(req.body.uid.indexOf("cookie:")!=-1){
       var user = req.body.uid;
       delete req.body.uid;
-      console.log(user);
       user=user.substring(7);
       user= stringToInt(user);
       anonUser[user%1000]=req.body;

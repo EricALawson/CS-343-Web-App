@@ -18,7 +18,8 @@ var googleLogout = () => {
 	firebase.auth().signOut()
 		.then( function() {
 			window.location.href = "/public/index.html";
-		}).catch( console.log )
+		}).catch((err)=>{console.log(err)});
+		delete_cookie("userid");
 }
 
 loginButton.addEventListener("click",googleLogin);
@@ -49,3 +50,7 @@ var isLoggedIn = () => {
 $(document).ready(isLoggedIn);
 loginButton.addEventListener("click",googleLogin);
 signOutBtn.addEventListener("click",googleLogout);
+
+function delete_cookie( name ) {
+	document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
