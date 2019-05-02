@@ -235,6 +235,8 @@ function webscrapeGame(gameJSON) {
                     tag = $(elem).text().trim();
                     tags.push(tag);
                 });
+                var img_url = $("img.game_header_image_full").attr("src")
+                gameJSON.img_url = img_url;
                 var reviewRatio = 0;
                 $("div.user_reviews_summary_row[data-tooltip-html]").each((i, elem) => {
                     var reviewString = $(elem).attr("data-tooltip-html").match(/\d+/);
