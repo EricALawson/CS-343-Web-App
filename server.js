@@ -54,44 +54,86 @@ app.get("/api/quiz/get", function(req, res) {
 });
 //------------------------------------------------------------
 app.get("/api/reccomendation?",function(req,res){
-  var userid;
-  var gameList=[];
-  console.log(req.query.userid);
-  var ref = db.ref("gameCache");
-  ref.once("value").then(snap=>{
-  //   if(typeof req.query.userid != "undefined"){
-  //     if(req.query.userid.indexOf("cookie")!=-1)
-  //       userid=stringToInt(req.query.userid.substring(7));
-  //   }
-  //   else{
-  //     var ref = db.ref("gameCache");
-  //     ref.once("value").then((snap)=>{
-  //       console.log("db connected");
-  //       var count=0;
-  //       while(count < 6){
-  //         var temp = snap.val()[Math.round(Math.random()*100000)];
-  //         console.log(temp);
-  //         if(temp.reviewRatio>60){
-  //           gameList.push(temp);
-  //           count++;
-  //         }
-  //       }
-        
-  //   })
-  // }
-    var count =0;
-    while(count < 6){
-      var num = Math.round(Math.random()*100000)*10;
-      var temp = snap.val()[num];
-      if(typeof temp != "undefined")
-        if(temp.reviewRatio>50){
-          gameList.push(temp);
-          count++;
-        }
+    var quizResponse = {
+        'SD' : -2,
+        'MD' : -1,
+        'N' : 0,
+        'MA' : 1,
+        'SA' : 2
     }
-    res.status(200).send(gameList);
-  })
-  
+    var gameArray = [];
+    const numGamesReturned = 6;
+    var userid;
+    console.log(req.query.userid);
+    var gameList = db.ref('/Questions/').once('value').then( (questionList) => {
+        return db.ref('/Users/' + req.query.userid + '/QuizHistory/').once('value').then ((quizlist) => {
+            var tagWeights = {}
+            quizlist.forEach((quiz) => {
+                quiz.forEach((question) => {
+                    var questionNumber = question.key.substring(1); //because it has a leading Q.
+                    //console.log("question number: " + questionNumber)
+                    var tagsArray = questionList.val()[questionNumber].tags.forEach((tag) => {
+                        if (tagWeights[tag.tag]) {
+                            tagWeights[tag.tag] += quizResponse[question.val()] * tag.multiplier;
+                        } else {
+                            tagWeights[tag.tag] = quizResponse[question.val()] * tag.multiplier;
+                        }
+                    })
+                })
+            })
+            return tagWeights;
+        })
+    }).then((tagWeights) => {
+        //console.log(tagWeights)
+        return db.ref('gameCache').orderByChild('reviewRatio').once('value').then( (data) => {
+            //console.log(data.val())
+            data.forEach( (snapshot) => {
+                gameJSON = snapshot.val()
+                gameArray.push(gameJSON)
+            })
+            return;
+        }).then( () => {
+            return tagWeights;
+        })
+
+    }).then( (tagWeights) => {
+        //generate 500 random indices.
+        gameSublist = [];
+        //console.log(gameArray.length)
+        while (gameSublist.length < 500) {
+            var index = Math.floor(Math.random() * gameArray.length);
+            var check = Math.floor(Math.random() * gameArray.length);
+            //console.log("index=" + index + " check=" + check)
+            if (check <= index) { //creates random index weighted by position in gameArray, which should be sorted by popularity.
+                if (gameArray[index].tags) {
+                    gameSublist.push(gameArray[index])
+                }
+            }
+        }
+        gameSublist.forEach( (gameJSON) => {
+            //console.log(gameSublist)
+            gameWeight = 0;
+            //console.log("before failing foreach call " + gameJSON)
+            gameJSON.tags.forEach( (tag) => {
+                if (tagWeights[tag]) {
+                    gameWeight += tagWeights[tag]
+                }
+            })
+            gameJSON.weight = gameWeight;
+        })
+
+        gameSublist.sort( (game1, game2) => {
+            if (game1.weight < game2.weight) {return 1}
+            else if (game1.weight == game2.weight) {return 0}
+            else {return -1}
+        })
+        bestGames = gameSublist.splice(0, numGamesReturned);
+        //console.log(bestGames)
+        return bestGames;
+    }).then( (bestGames) => {
+        res.status(200).send(bestGames);
+
+    })
 })
 //------------------------------------------------------------
 var anonUser=[]
