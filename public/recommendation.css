@@ -49,17 +49,27 @@ a {
   text-decoration: none;
 }
 
-#recs{
-  display:flex;
+#recs {
+  display: flex;
   flex-direction: column;
 }
 
-#recs a{
-  font-size:30px;
+#recs a {
+  font-size: 30px;
   margin: 10px;
 }
 
-#recs a:hover{
+#recs a:hover {
   box-shadow: none;
   text-shadow: 0px 0px 20px white;
+}
+
+.buttoncolumngame {
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 65px;
+  color: white;
 }

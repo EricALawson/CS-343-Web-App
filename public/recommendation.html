@@ -1,56 +1,88 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Game.me</title>
-            <!--Style-->
-            <link href="/public/template.css" rel="stylesheet" type="text/css">
-            <link href="/public/recommendation.css" rel="stylesheet" type="text/css">
-            <link rel="icon" href="/public/GameMeLogo.png" type="image/gif" sizes="16x16">
-            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-            
-            <!--scripts-->
-        <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
-        <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-        <!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
-        <script defer src="/public/scripts/init-firebase.js"></script>
-             <script defer src="/public/scripts/loginFunctions.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-             <script src="/public/scripts/recommendation.js"></script>
-      </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game.me</title>
+    <!--Style-->
+    <link href="/public/template.css" rel="stylesheet" type="text/css" />
+    <link href="/public/recommendation.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="icon"
+      href="/public/GameMeLogo.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!--scripts-->
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"
+    ></script>
+    <!--script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script-->
+    <script defer src="/public/scripts/init-firebase.js"></script>
+    <script defer src="/public/scripts/loginFunctions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/public/scripts/recommendation.js"></script>
+  </head>
   <body>
-      <header>
-          <nav>
-              <div class="ico">
-                  <a id="logo" href="/public/index.html"><img id="logoImage" src="/public/GameMeLogo.png"></a>
-                  <h1>Game.Me</h1>
-      </div>
-              <div class="accNav">
-                  <div class="loginBtns flex">
-                          <p>Sign in with Google!</p>
-            <img class="icon" id="googleIco" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">
+    <header>
+      <nav>
+        <div class="ico">
+          <a id="logo" href="/public/index.html"
+            ><img id="logoImage" src="/public/GameMeLogo.png"
+          /></a>
+          <h1>Game.Me</h1>
         </div>
-                  <div class="signOut hidden">
-                      <img id="profPic" alt="Profile Pic" src="">
-                      <p id="username"></p>
-                      <div class="buttonsmaller">
-                        <div class="buttoncolumnsmaller">
-                          <a href="/public/accountpage.html">View Account</a>
-                        </div>
-                      </div>
-            <p id="signOut">Sign out</p>
+        <div class="accNav">
+          <div class="loginBtns flex">
+            <p>Sign in with Google!</p>
+            <img
+              class="icon"
+              id="googleIco"
+              src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png"
+            />
+          </div>
+          <div class="signOut hidden">
+            <img id="profPic" alt="Profile Pic" src="" />
+            <p id="username"></p>
+            <div class="buttonsmaller">
+              <div class="buttoncolumnsmaller">
+                <a href="/public/accountpage.html">View Account</a>
+              </div>
             </div>
-      </div>
-    
-          </nav>
-      </header>
+            <p id="signOut">Sign out</p>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="button">
-        <div id="recs">
-          
+        <div class="buttoncolumngame">
+          <a href="https://store.steampowered.com/app/252950/Rocket_League/"
+            ><img
+              src="/public/rocketleague.png"
+              width="250"
+              height="350"
+              title="Rocket Rocket_League"
+          /></a>
+          <a
+            ><img src="/public/save.png" width="50" height="50" title="save"
+          /></a>
         </div>
         <div class="buttoncolumn">
           <a href="/public/recommendation.html"><center>Game Me!</center></a>

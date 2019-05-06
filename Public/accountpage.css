@@ -48,3 +48,12 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.buttoncolumngame {
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 65px;
+  color: white;
+}
